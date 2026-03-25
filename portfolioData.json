@@ -1,0 +1,63 @@
+{
+  "personalInfo": {
+    "name": "宋方胜",
+    "nameEn": "VictorFang",
+    "avatarPath": "./IMG/touxiang.jpg",
+    "age": "18",
+    "basedIn": "zzu",
+    "role": "Creative Web Developer",
+    "heroTitle": "Crafting Digital Experiences",
+    "heroBioEn": "专注于创建优雅且实用的数字产品，追求代码的艺术性与工程性的完美平衡。",
+    "heroBioCn": "用代码编织艺术，用工程铸就完美。"
+  },
+  "stats": [
+    {
+      "value": "03",
+      "label": "PROJECTS"
+    },
+    {
+      "value": "4+",
+      "label": "YEARS EXP."
+    },
+    {
+      "value": "08+",
+      "label": "SKILLS"
+    }
+  ],
+  "backgrounds": [
+    "./IMG/background_image1.png",
+    "./IMG/background_image2.jpg"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "nameCn": "待办事项清单（进阶版）",
+      "nameEn": "To-Do List (Advanced)",
+      "description": "支持分类、优先级、搜索与统计的智能待办工具",
+      "screenshotPath": "./IMG/xiangmu1.png",
+      "techStack": [ "React", "TypeScript", "Vite", "Zustand", "Tailwind CSS", "date-fns" ],
+      "date": "2026-01",
+      "status": "Done"
+    },
+    {
+      "id": 2,
+      "nameCn": "番茄钟计时器",
+      "nameEn": "Pomodoro Timer",
+      "description": "支持自定义时长、通知提醒的专注力工具",
+      "screenshotPath": "./IMG/xiangmu2.png",
+      "techStack": [ "React", "TypeScript", "Vite", "Tailwind CSS", "Notification API", "LocalStorage" ],
+      "date": "2026-02",
+      "status": "Done"
+    },
+    {
+      "id": 3,
+      "nameCn": "天气查询应用",
+      "nameEn": "Weather App",
+      "description": "支持城市搜索、定位、收藏的天气查询工具",
+      "screenshotPath": "./IMG/xiangmu3.png",
+      "techStack": [ "React", "TypeScript", "Vite", "Tailwind CSS", "OpenWeatherMap API", "LocalStorage" ],
+      "date": "2026-03",
+      "status": "Done"
+    }
+  ]
+}
