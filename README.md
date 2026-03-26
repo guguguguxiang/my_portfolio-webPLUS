@@ -1,6 +1,4 @@
-
-
-![](./README.assets/file-20260324170602440.png)
+![](./README.assets/file-20260324170602440-1774501705073-1.png)
 
 这是第一版感觉不满意 然后想把项目展示改成四方格 一直改不成功。我准备用web to mcp借鉴一些漂亮的格式然后就是增加一些图片展示项目介绍等 已经四方格滑动展示项目等。
 
@@ -39,88 +37,28 @@ ai提供提示词给cursor  然后npm run dev终端运行这个查看效果
 
 好像到这一步（也不清楚怎么来的）
 
-![image-20260325195000670](./README.assets/image-20260325195000670.png)
+![image-20260325195000670](./README.assets/image-20260325195000670-1774501705073-2.png)
 
-![image-20260325195015429](./README.assets/image-20260325195015429.png)
+![image-20260325195015429](./README.assets/image-20260325195015429-1774501705073-3.png)
 
 复制这个给对话框让他push到我的github仓库
 
-然后修改上传完善了解即可
+
+
+每次更改之前push一下  终端吧  然后测试两个效果trae和cursor用自己账户
+
+然后一些文件保留  重新写 完善一下提示词
+
+==明天在搞吧 感觉有点拉写的不行用用pro写写？还因为步保存导致出错了==
+
+![](./README.assets/file-20260325205556715.png)
+
+写完了 但是今天上限了 明天在修改完善一下（页面全屏有点瑕疵 然后下面没有往右的箭头）
+![](./README.assets/file-20260326130101622.png)
+这一版提交了 3.26 第二版
 
 
 
+后面再这个路径有个项目解读 理解项目
 
-
-# React + TypeScript + Vite（下面这是创建框架自己生成的readme）
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+E:\github_my\gu_Obsibian_biji\第四阶段！\实操\项目实操\第一个项目 以及说明和git操作\继续写项目一（第一个写的太垃圾了重新写一下）
