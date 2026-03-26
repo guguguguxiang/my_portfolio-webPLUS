@@ -1,29 +1,44 @@
 import { portfolioData } from '../../data/portfolioData'
+import {
+  UserRound,
+  BriefcaseBusiness,
+  MessageCircle,
+  Phone,
+  PenSquare,
+  Mail,
+} from 'lucide-react'
 
 export default function Profile() {
   const { personalInfo } = portfolioData
+  const profileRows = [
+    { label: '姓 名', value: `${personalInfo.name} / ${personalInfo.nameEn}`, icon: UserRound },
+    { label: '专 业', value: personalInfo.major, icon: BriefcaseBusiness },
+    { label: '微 信', value: personalInfo.wechat, icon: MessageCircle },
+    { label: '电 话', value: personalInfo.phone, icon: Phone },
+    { label: '站酷ID', value: personalInfo.zcoolId, icon: PenSquare },
+    { label: '邮 箱', value: personalInfo.email, icon: Mail },
+  ]
 
   return (
-    <section className="flex flex-col items-center gap-5 md:items-start">
+    <section className="space-y-6">
       <img
         src={personalInfo.avatarPath}
         alt={personalInfo.name}
         loading="lazy"
-        className="h-24 w-24 rounded-full object-cover ring-1 ring-white/20"
+        className="h-28 w-28 rounded-3xl object-cover ring-1 ring-white/20 shadow-inner shadow-black/20"
       />
 
-      <div className="flex flex-col items-center text-center md:items-start md:text-left">
-        <h2 className="text-4xl font-bold leading-tight md:text-5xl">
-          {personalInfo.name}
-        </h2>
-
-        <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-gray-400 md:justify-start md:text-base">
-          <span>{personalInfo.age}</span>
-          <span className="text-white/20">•</span>
-          <span>{personalInfo.basedIn}</span>
-          <span className="text-white/20">•</span>
-          <span>{personalInfo.role}</span>
-        </div>
+      <div className="space-y-3">
+        {profileRows.map((item) => {
+          const Icon = item.icon
+          return (
+            <div key={item.label} className="flex items-center gap-3 text-sm md:text-base">
+              <Icon className="h-4 w-4 text-gray-300" />
+              <span className="min-w-14 text-gray-300">{item.label}：</span>
+              <span className="text-gray-100">{item.value}</span>
+            </div>
+          )
+        })}
       </div>
     </section>
   )

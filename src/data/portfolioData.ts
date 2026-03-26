@@ -13,6 +13,11 @@ export interface PersonalInfo {
   age: string
   basedIn: string
   role: string
+  major: string
+  wechat: string
+  phone: string
+  zcoolId: string
+  email: string
   heroTitle: string
   heroBioEn: string
   heroBioCn: string
@@ -32,6 +37,7 @@ export interface Project {
   techStack: string[]
   date: string
   status: string
+  currentStage: 'To Do' | 'In Progress' | 'Done'
 }
 
 export interface PortfolioData {
@@ -49,6 +55,11 @@ export const portfolioData: PortfolioData = {
     age: '18',
     basedIn: 'zzu',
     role: 'Creative Web Developer',
+    major: 'Software Engineering',
+    wechat: 'VictorFang_18',
+    phone: '+86 188-0000-0000',
+    zcoolId: 'VictorFang_Design',
+    email: 'victorfang.dev@gmail.com',
     heroTitle: 'Crafting Digital Experiences',
     heroBioEn:
       '专注于创建优雅且实用的数字产品，追求代码的艺术性与工程性的完美平衡。',
@@ -77,6 +88,7 @@ export const portfolioData: PortfolioData = {
       ],
       date: '2026-01',
       status: 'Done',
+      currentStage: 'Done',
     },
     {
       id: 2,
@@ -93,7 +105,8 @@ export const portfolioData: PortfolioData = {
         'LocalStorage',
       ],
       date: '2026-02',
-      status: 'Done',
+      status: 'In Progress',
+      currentStage: 'In Progress',
     },
     {
       id: 3,
@@ -110,7 +123,8 @@ export const portfolioData: PortfolioData = {
         'LocalStorage',
       ],
       date: '2026-03',
-      status: 'Done',
+      status: 'To Do',
+      currentStage: 'To Do',
     },
   ],
 }

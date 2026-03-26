@@ -1,18 +1,21 @@
 import { portfolioData } from '../../data/portfolioData'
 
-export default function Background() {
-  const bg = portfolioData.backgrounds[0]
+type BackgroundProps = {
+  src?: string
+}
+
+export default function Background({ src }: BackgroundProps) {
+  const bg = src ?? portfolioData.backgrounds[0]
 
   return (
-    <div className="absolute inset-0">
+    <div className="absolute inset-0 z-0">
       <img
         src={bg}
         alt=""
         loading="lazy"
         className="h-full w-full object-cover"
       />
-      {/* 遮罩层：确保后续文字/卡片可读 */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-slate-900/55 to-black/70 backdrop-blur-[2px]" />
     </div>
   )
 }
