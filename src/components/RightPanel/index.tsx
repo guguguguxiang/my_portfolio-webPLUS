@@ -9,7 +9,7 @@ export default function RightPanel() {
   const [activeBgIndex] = useState(0)
 
   return (
-    <section className="relative flex-1 overflow-hidden w-full md:h-screen">
+    <section className="relative flex-1 overflow-hidden w-full md:h-screen min-w-0">
       <Background src={backgrounds[activeBgIndex]} />
       <Showcase />
     </section>
